@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>doc</title>
+</head>
+<body>
+      <div class="container">
+          <div class="row">  
+    <%for(var i=0;i<data.length;i++){%>
+            <div class="w-100 p-3 col-sm-6"></div>
+        <div class="card" style="width: 18rem;">
+                <div class="card-header"><%=data[i].name%>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><%=data[i].roll%></li>
+                  <li class="list-group-item"><%=data[i].adm%></li>
+                  <li class="list-group-item"><%=data[i].clg%></li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+        </div>
+              <%}%>
+    </div>
+</div>   
+              
+</body>
+</html>
